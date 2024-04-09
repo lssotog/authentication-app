@@ -1,10 +1,14 @@
 nav{
   background-color: rgb(254, 253, 253);
   box-shadow: 3px 3px 5px rgba($color: #040404, $alpha: 1.0);
+  position: sticky;
+  top:0;
 }
 
 nav ul{
   width: 100%;  
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
   justify-content: flex-end;
