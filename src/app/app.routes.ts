@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { ProfileComponent } from './profile/profile.component';
-import { RegisterComponent } from './register/register.component';
+// import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 export const routes: Routes = [
   {
     title: 'title',
     path: '',
-    component: HomeComponent
+    loadComponent: ()=> import('./pages/home/home.component').then(m =>m.HomeComponent)
   },
   {
     title: 'login',
