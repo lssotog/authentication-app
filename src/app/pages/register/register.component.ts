@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { SharedModule } from '../../shared/common/shared.module';
 import { RouterLink } from '@angular/router';
+
+import { SharedModule } from '../../shared/common/shared.module';
 
 @Component({
   selector: 'app-register',
