@@ -19,7 +19,4 @@ export class LoginComponent {
   faEnvelope = faEnvelope;
   faGoogle = faG;
   copyText = copyText;
-  // faFacebook = faFacebook;
-  // faTwitter = faTwitter;
-  // faGithub = faGithub;
 }
