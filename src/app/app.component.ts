@@ -4,7 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { NavBarComponent } from './shared/components/molecules/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-root',
