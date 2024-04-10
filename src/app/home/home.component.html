@@ -1,1 +1,28 @@
-<p>Home!!!</p>
+<div class="general-template">
+  <section class="ml5">
+    <app-header />
+  </section>
+  <section class="container">
+    <h2>Join thousands of learners from around the world </h2>
+    <p class="mt1 description-text">Master web development by making real-life projects. There are multiple paths for you to choose</p>
+  </section>
+  <section class="container form-container">
+    <app-input />
+    <app-input />
+    <button class="start-button">Start coding now </button>
+  </section>
+  <footer>
+    <p>or continue with these social profile</p>
+    <div class="social-media-container">
+      <app-button [icon]="faGoogle"></app-button>
+      <app-button [icon]="faEnvelope"></app-button>
+      <app-button [icon]="faEnvelope"></app-button>
+      <app-button [icon]="faEnvelope"></app-button>
+    </div>
+    <p class="mt2">
+      {{copyText.member}}
+      <a routerLink="/login">Login</a>
+    </p>
+  </footer>
+</div>
+<app-author-sign />

@@ -9,7 +9,14 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ HomeComponent,LoginComponent, ProfileComponent, RegisterComponent, RouterOutlet, NavBarComponent],
+  imports: [ 
+    HomeComponent,
+    LoginComponent, 
+    ProfileComponent, 
+    RegisterComponent, 
+    RouterOutlet, 
+    NavBarComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
