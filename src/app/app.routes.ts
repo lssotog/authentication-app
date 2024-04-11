@@ -1,7 +1,4 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { ProfileComponent } from './pages/profile/profile.component';
-import { RegisterComponent } from './pages/register/register.component';
 
 export const routes: Routes = [
   {
@@ -12,17 +9,17 @@ export const routes: Routes = [
   {
     title: 'login',
     path: 'login',
-    component: LoginComponent
+    loadComponent: ()=> import('./pages/login/login.component').then(m =>m.LoginComponent)
   },
   {
     title: 'profile',
     path: 'profile',
-    component: ProfileComponent
+    loadComponent: ()=> import('./pages/profile/profile.component').then(m =>m.ProfileComponent)
   },
   {
     title: 'register',
     path: 'register',
-    component: RegisterComponent
+    loadComponent: ()=> import('./pages/register/register.component').then(m =>m.RegisterComponent)
   },
   {
     path:'**',
