@@ -1,28 +1,25 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { ProfileComponent } from './pages/profile/profile.component';
-import { RegisterComponent } from './pages/register/register.component';
 
 export const routes: Routes = [
   {
     title: 'title',
     path: '',
-    loadComponent: ()=> import('./pages/home/home.component').then(m =>m.HomeComponent)
+    loadChildren: ()=> import('./pages/home/home.module').then(m =>m.HomeModule )
   },
   {
     title: 'login',
     path: 'login',
-    component: LoginComponent
+    loadComponent: ()=> import('./pages/login/login.component').then(c =>c.LoginComponent)
   },
   {
     title: 'profile',
     path: 'profile',
-    component: ProfileComponent
+    loadComponent: ()=> import('./pages/profile/profile.component').then(c =>c.ProfileComponent)
   },
   {
     title: 'register',
     path: 'register',
-    component: RegisterComponent
+    loadComponent: ()=> import('./pages/register/register.component').then(c =>c.RegisterComponent)
   },
   {
     path:'**',
