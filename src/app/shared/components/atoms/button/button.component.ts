@@ -6,7 +6,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [ FontAwesomeModule ],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
   schemas: [
