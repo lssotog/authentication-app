@@ -1,3 +1,27 @@
-input{
-  margin-bottom: 25px;
+label{
+  display: inline-flex;
+  height: 48px;
+}
+
+.has-container{
+  box-shadow: 0 0 0 0.5px var(--gray-color-1);
+  border-radius: 3px;
+  padding-inline: 3px;
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  &:has(input:focus-visible) {
+    box-shadow: 0 0 0 1px var(--gray-color-1);
+  }
+}
+
+.icon{
+  display: inline-flex;
+  width: 100%;
+  max-width: 20px;
+  margin-top: 18px;
+  margin-left: 10px;
+  color: var(--gray-color-1);
 }
