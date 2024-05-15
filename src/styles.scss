@@ -53,45 +53,48 @@ label{
   border-radius: 24px;
   width: 100%;
   max-width: 532px;
-  // min-height: 718px;
-  padding: 17px;
+  padding: 48px 17px 58px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 
-//En Login asignar valor min-height: 544px;
+.form-header-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  max-width: 475px;
+  margin-inline: auto;
+}
 
 .container{
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 20px 35px;
 }
 
 .form-container{
   width: 100%;
   max-width: 475px;
-  margin-top: 15px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .start-button{
   width: 100%;
   min-height: 46px;
-  background-color: #DEA559;
-  font-weight: bold;
+  background-color: #2F80ED;
+  color: #ffffff;
   font-size: 18px;
   border-radius: 10px;
 }
 
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // color: var(--gray-color-1);
-}
-
 .social-media-container{
-  margin-top: 35px; 
-  background-color: #fff;
+  display: flex;
+  column-gap: 20px;
 }
 
 .m1{
@@ -104,6 +107,14 @@ footer{
 
 .mt2{
   margin-top: 33px;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.mb2{
+  margin-bottom: 33px;
 }
 
 .ml1{

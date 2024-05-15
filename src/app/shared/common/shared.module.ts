@@ -6,6 +6,7 @@ import { FooterComponent } from "../components/molecules/footer/footer.component
 import { HeaderComponent } from "../components/atoms/header/header.component";
 import { InputComponent } from "../components/atoms/input/input.component";
 import { NavBarComponent } from "../components/molecules/nav-bar/nav-bar.component";
+import { BrandComponent } from "../components/atoms/brand/brand.component";
 
 @NgModule({
   imports:[
@@ -14,7 +15,8 @@ import { NavBarComponent } from "../components/molecules/nav-bar/nav-bar.compone
     FooterComponent,
     HeaderComponent,
     InputComponent,
-    NavBarComponent
+    NavBarComponent,
+    BrandComponent
   ],
   exports: [
     AuthorSignComponent,
@@ -22,7 +24,8 @@ import { NavBarComponent } from "../components/molecules/nav-bar/nav-bar.compone
     FooterComponent,
     HeaderComponent,
     InputComponent,
-    NavBarComponent
+    NavBarComponent,
+    BrandComponent
   ],
   providers: [],
 })

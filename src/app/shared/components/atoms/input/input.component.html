@@ -1,4 +1,6 @@
 <label class="has-container">
-  <fa-icon class="icon" [icon]="icon"></fa-icon>
+  <ng-container *ngIf="icon">
+    <fa-icon class="icon" [icon]="icon"></fa-icon>
+  </ng-container>
   <input [placeholder]="placeholder">
 </label>

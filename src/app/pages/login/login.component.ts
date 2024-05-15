@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import { faLock, faG,  faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faG,  faEnvelope, faX, faF } from '@fortawesome/free-solid-svg-icons';
 import { copyText } from '../../shared/utils/constants/copy-text-constants';
 import { SharedModule } from '../../shared/common/shared.module';
 
@@ -20,4 +20,6 @@ export class LoginComponent {
   faLock = faLock;
   faGoogle = faG;
   copyText = copyText;
+  faX = faX;
+  faF = faF;
 }

@@ -1,22 +1,22 @@
 <div class="general-template">
-  <section class="ml5">
-    <app-header />
+  <section class="form-header-container">
+    <app-brand />
+    <h2>Login</h2>
   </section>
   <section class="container form-container">
-    <h2>Login</h2>
-    <app-input placeholder="Name" [icon]="faEnvelope" class="m1"/>
-    <app-input placeholder="Name" [icon]="faLock"/>
-    <button class="start-button m1">Login</button>
+    <app-input placeholder="Name" [icon]="faEnvelope" />
+    <app-input placeholder="Password" [icon]="faLock"/>
+    <button class="start-button mt1">Login</button>
   </section>
   <footer>
     <p>or continue with these social profile</p>
     <div class="social-media-container">
       <app-button [icon]="faGoogle"></app-button>
-      <app-button [icon]="faEnvelope"></app-button>
-      <app-button [icon]="faEnvelope"></app-button>
+      <app-button [icon]="faF"></app-button>
+      <app-button [icon]="faX"></app-button>
       <app-button [icon]="faEnvelope"></app-button>
     </div>
-    <p class="mt2">
+    <p class="">
       {{copyText.account}} 
       <a routerLink="/register">Register</a>
     </p>
