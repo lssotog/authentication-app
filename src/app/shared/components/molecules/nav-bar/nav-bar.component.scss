@@ -1,12 +1,12 @@
-nav{
+nav {
   background-color: rgb(254, 253, 253);
-  box-shadow: 3px 3px 5px rgba($color: #040404, $alpha: 1.0);
+  box-shadow: 3px 3px 5px rgba($color: #a2a2a2, $alpha: 0.2);
   position: sticky;
-  top:0;
+  top: 0;
 }
 
-nav ul{
-  width: 100%;  
+nav ul {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -15,11 +15,11 @@ nav ul{
   align-items: center;
 }
 
-nav li{
-  height: 50px;
+nav li {
+  height: 35px;
 }
 
-nav a{
+nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -28,12 +28,10 @@ nav a{
   color: black;
 }
 
-nav a:hover{
+nav a:hover {
   background-color: #f0f0f0;
 }
 
-nav li:first-child{
+nav li:first-child {
   margin-right: auto;
 }
-
-

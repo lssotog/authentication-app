@@ -1,6 +1,6 @@
-.lastParagraph{
+.lastParagraph {
   width: 100%;
-  max-width: 454px;
+  max-width: var(--template-max-width);
   display: flex;
   flex-direction: row;
   justify-content: space-between;

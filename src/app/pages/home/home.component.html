@@ -1,15 +1,15 @@
 <div class="general-template">
-  <section class="ml5">
+  <header class="form-header-container">
     <app-header />
-  </section>
-  <section class="container">
-    <h2>Join thousands of learners from around the world </h2>
-    <p class="mt1 description-text">Master web development by making real-life projects. There are multiple paths for you to choose</p>
-  </section>
+    <section class="form-header-container-text">
+      <h2>Join thousands of learners from around the world </h2>
+      <p class="description-text">Master web development by making real-life projects. There are multiple paths for you to choose</p>
+    </section>
+  </header>
   <section class="container form-container">
-    <app-input placeholder="Name" [icon]="faEnvelope" class="m1"/>
+    <app-input placeholder="Name" [icon]="faEnvelope" class=""/>
     <app-input placeholder="Password" [icon]="faLock"/>
-    <button class="start-button m1">Start coding now </button>
+    <button class="start-button mt6">Start coding now </button>
   </section>
   <footer>
     <p>or continue with these social profile</p>
@@ -19,7 +19,7 @@
       <app-button [icon]="faEnvelope"></app-button>
       <app-button [icon]="faEnvelope"></app-button>
     </div>
-    <p class="mt2">
+    <p class="">
       {{copyText.member}}
       <a routerLink="/login">Login</a>
     </p>
