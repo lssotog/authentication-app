@@ -17,4 +17,5 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 export class InputComponent {
 @Input() icon!: IconProp;
 @Input() placeholder! : string;
+@Input() type? : string;
 }

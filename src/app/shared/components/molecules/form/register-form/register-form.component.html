@@ -1,9 +1,24 @@
 
-<div>
-  <app-input placeholder="Name"  />
-  <app-input placeholder="Bio" [icon]="faLock"/>
-  <app-input placeholder="Phone" [icon]="faLock"/>
-  <app-input placeholder="E-mail" [icon]="faLock"/>
-  <app-input placeholder="Password" [icon]="faLock"/>
-  <button class="m1">Save</button>
+<div class="register-form-container">
+  <label>
+    <span>Name</span>
+    <app-input placeholder="Enter your name..."/>
+  </label>
+  <label>
+    <span>Bio</span>
+    <app-input type="textArea" placeholder="Enter your bio..."/>
+  </label>
+  <label>
+    <span>Phone</span>
+    <app-input placeholder="Enter your phone..."/>
+  </label>
+  <label>
+    <span>E-mail</span>
+    <app-input placeholder="Enter your email..."/>
+  </label>
+  <label>
+    <span>Password</span>
+    <app-input placeholder="Enter your new password..."/>
+  </label>
+  <button class="start-button mt6">Save</button>
 </div>

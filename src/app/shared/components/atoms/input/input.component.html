@@ -2,5 +2,9 @@
   <ng-container *ngIf="icon">
     <fa-icon class="icon" [icon]="icon"></fa-icon>
   </ng-container>
-  <input [placeholder]="placeholder">
+  @if (type == "textArea") {
+    <textarea [placeholder]="placeholder"></textarea>
+  } @else {
+    <input [placeholder]="placeholder" [type]="type">
+  }
 </label>

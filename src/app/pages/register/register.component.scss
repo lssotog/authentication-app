@@ -1,0 +1,14 @@
+:host {
+  @media screen and (width > 490px) {
+    --form-container-max-width: 416px;
+    --template-max-width: 845px;
+    --template-padding: 48px 50px 58px;
+    --form-container-margin-inline: 0;
+    --form-header-container-row-gap: 30px;
+  }
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: row;
+}

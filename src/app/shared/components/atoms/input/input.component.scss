@@ -1,19 +1,25 @@
 label{
   display: inline-flex;
-  height: 48px;
+  min-height: 48px;
 }
 
 .has-container{
   box-shadow: 0 0 0 0.5px var(--gray-color-1);
   border-radius: 3px;
   padding-inline: 3px;
-  input {
+  input, textarea {
     border: none;
     outline: none;
     background-color: transparent;
-  }
+  } 
+  &:has(textarea:focus-visible),
   &:has(input:focus-visible) {
     box-shadow: 0 0 0 1px var(--gray-color-1);
+  }
+  textarea {
+    width: 100%;
+    min-height: 91px;
+    resize: none;
   }
 }
 

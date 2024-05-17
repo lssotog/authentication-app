@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faLock, faG,  faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faG,  faEnvelope, faX, faF } from '@fortawesome/free-solid-svg-icons';
 import { copyText } from '../../shared/utils/constants/copy-text-constants';
 @Component({
   selector: 'app-home',
@@ -12,4 +12,6 @@ export class HomeComponent {
   faLock = faLock;
   faGoogle = faG;
   copyText = copyText;
+  faX = faX;
+  faF = faF;
 }
